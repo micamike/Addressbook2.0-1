@@ -31,17 +31,38 @@ public class ContactHelper extends HelperBase{
   }
 
   public void deleteContact() {
-    click(By.cssSelector("[value=Delete]"));
+    click(By.cssSelector("[onclick='DeleteSel()']"));
   }
+  //*[@onclick='DeleteSel()']
 
   public void selectContact() {
     click(By.name("selected[]"));
   }
 
   public void initContactModification() {
-    click(By.cssSelector("[title=Edit]"));
+    click(By.cssSelector("[title=EDIT]"));
   }
 
   public void confirmContactModification() {
     click(By.name("update"));  }
+
+  public boolean isContactPresent() {
+    return isElementPresent(By.name("selected[]"));
+  }
+
+  public void createContact() {
+    initContactCreation();
+    fillContactForm(new Contact().setlName("Haim").setfName("Moshe").setAddress("Israel").setEmail("HM@hotmail.com").setPhoneHome("050555555"));
+    confirmContactCreation();
+  }
+
+  public void selectContactByIndex(int i) {
+    wd.findElements(By.name("selected[]")).get(i).click();
+  }
+
+  public boolean isOnTheHomePage(){return isElementPresent(By.id("maintable"));}
+
+  public int getContactCount() {
+    return wd.findElements(By.name("selected[]")).size();
+  }
 }

@@ -14,7 +14,7 @@ public class NavigationHelper extends HelperBase{
   }
 
   public void openHomePage() {
-    click(By.xpath("//a[@href='./']"));
+    click(By.cssSelector("[href='./']"));
   }
 
   public void openGroupsPage() {

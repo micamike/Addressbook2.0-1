@@ -12,9 +12,11 @@ public class HelperBase {
   }
 
   public void type(By locator, String text) {
-    wd.findElement(locator).click();
-    wd.findElement(locator).clear();
-    wd.findElement(locator).sendKeys(text);
+    if(text != null) {
+      wd.findElement(locator).click();
+      wd.findElement(locator).clear();
+      wd.findElement(locator).sendKeys(text);
+    }
   }
 
   public void click(By locator) {
