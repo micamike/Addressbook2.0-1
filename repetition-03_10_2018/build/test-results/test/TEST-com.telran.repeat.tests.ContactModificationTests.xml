@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.telran.repeat.tests.ContactModificationTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-11-19T13:01:57" hostname="DESKTOP-PUIG3K0" time="4.908">
+  <properties/>
+  <testcase name="testsContactModification[0](Contact{fName='Mickael', lName='Aboulkheir', address='Eli Cohen', email='micamike@hotmail.com', phoneHome='0533381248'})" classname="com.telran.repeat.tests.ContactModificationTests" time="1.507"/>
+  <testcase name="testsContactModification[1](Contact{fName='David', lName='Pinto', address='Mercaz klita', email='DPinto@gmail.com', phoneHome='054928745'})" classname="com.telran.repeat.tests.ContactModificationTests" time="1.545"/>
+  <testcase name="testsContactModification[2](Contact{fName='Steven', lName='Sarfati', address='770 States', email='SS55@yahoo.fr', phoneHome='055555555'})" classname="com.telran.repeat.tests.ContactModificationTests" time="1.547"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[1542632517548	Marionette	TRACE	0 -> [0,431,"WebDriver:FindElement",{"using":"css selector","value":"[title=EDIT]"}]
+1542632517550	Marionette	TRACE	0 <- [1,431,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"98f408d2-5747-41b9-ae53-7154ed711901"}}]
+1542632517553	Marionette	TRACE	0 -> [0,432,"WebDriver:ElementClick",{"id":"98f408d2-5747-41b9-ae53-7154ed711901"}]
+1542632517568	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://localhost/addressbook/
+1542632517612	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://localhost/addressbook/
+1542632517613	Marionette	DEBUG	[6442450945] Received DOM event unload for http://localhost/addressbook/
+1542632517622	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://localhost/addressbook/edit.php?id=87
+1542632517652	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://localhost/addressbook/edit.php?id=87
+1542632517654	Marionette	TRACE	0 <- [1,432,null,{"value":null}]
+1542632517663	Marionette	TRACE	0 -> [0,433,"WebDriver:FindElement",{"using":"css selector","value":"*[name='firstname']"}]
+1542632517665	Marionette	TRACE	0 <- [1,433,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"01d61244-c195-4cb2-b2dc-7d305fed814e"}}]
+1542632517668	Marionette	TRACE	0 -> [0,434,"WebDriver:ElementClick",{"id":"01d61244-c195-4cb2-b2dc-7d305fed814e"}]
+1542632517883	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+1542632517884	Marionette	TRACE	0 <- [1,434,null,{"value":null}]
+1542632517890	Marionette	TRACE	0 -> [0,435,"WebDriver:FindElement",{"using":"css selector","value":"*[name='firstname']"}]
+1542632517893	Marionette	TRACE	0 <- [1,435,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"01d61244-c195-4cb2-b2dc-7d305fed814e"}}]
+1542632517898	Marionette	TRACE	0 -> [0,436,"WebDriver:ElementClear",{"id":"01d61244-c195-4cb2-b2dc-7d305fed814e"}]
+1542632517904	Marionette	TRACE	0 <- [1,436,null,{"value":null}]
+1542632517908	Marionette	TRACE	0 -> [0,437,"WebDriver:FindElement",{"using":"css selector","value":"*[name='firstname']"}]
+1542632517912	Marionette	TRACE	0 <- [1,437,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"01d61244-c195-4cb2-b2dc-7d305fed814e"}}]
+1542632517917	Marionette	TRACE	0 -> [0,438,"WebDriver:ElementSendKeys",{"id":"01d61244-c195-4cb2-b2dc-7d305fed814e","text":"Mickael","value":["M","i","c","k","a","e","l"]}]
+1542632517931	Marionette	TRACE	0 <- [1,438,null,{"value":null}]
+1542632517935	Marionette	TRACE	0 -> [0,439,"WebDriver:FindElement",{"using":"css selector","value":"*[name='lastname']"}]
+1542632517940	Marionette	TRACE	0 <- [1,439,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"e2cfb9ad-cb58-421a-b906-4a65bbd36a9f"}}]
+1542632517943	Marionette	TRACE	0 -> [0,440,"WebDriver:ElementClick",{"id":"e2cfb9ad-cb58-421a-b906-4a65bbd36a9f"}]
+1542632518150	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+1542632518151	Marionette	TRACE	0 <- [1,440,null,{"value":null}]
+1542632518154	Marionette	TRACE	0 -> [0,441,"WebDriver:FindElement",{"using":"css selector","value":"*[name='lastname']"}]
+1542632518155	Marionette	TRACE	0 <- [1,441,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"e2cfb9ad-cb58-421a-b906-4a65bbd36a9f"}}]
+1542632518158	Marionette	TRACE	0 -> [0,442,"WebDriver:ElementClear",{"id":"e2cfb9ad-cb58-421a-b906-4a65bbd36a9f"}]
+1542632518160	Marionette	TRACE	0 <- [1,442,null,{"value":null}]
+1542632518163	Marionette	TRACE	0 -> [0,443,"WebDriver:FindElement",{"using":"css selector","value":"*[name='lastname']"}]
+1542632518164	Marionette	TRACE	0 <- [1,443,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"e2cfb9ad-cb58-421a-b906-4a65bbd36a9f"}}]
+1542632518167	Marionette	TRACE	0 -> [0,444,"WebDriver:ElementSendKeys",{"id":"e2cfb9ad-cb58-421a-b906-4a65bbd36a9f","text":"Aboulkheir","value":["A","b","o","u","l","k","h","e","i","r"]}]
+1542632518176	Marionette	TRACE	0 <- [1,444,null,{"value":null}]
+1542632518180	Marionette	TRACE	0 -> [0,445,"WebDriver:FindElement",{"using":"css selector","value":"*[name='address']"}]
+1542632518182	Marionette	TRACE	0 <- [1,445,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"bc600feb-7279-4a0f-963f-62954d1583bd"}}]
+1542632518185	Marionette	TRACE	0 -> [0,446,"WebDriver:ElementClick",{"id":"bc600feb-7279-4a0f-963f-62954d1583bd"}]
+1542632518394	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+1542632518395	Marionette	TRACE	0 <- [1,446,null,{"value":null}]
+1542632518400	Marionette	TRACE	0 -> [0,447,"WebDriver:FindElement",{"using":"css selector","value":"*[name='address']"}]
+1542632518404	Marionette	TRACE	0 <- [1,447,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"bc600feb-7279-4a0f-963f-62954d1583bd"}}]
+1542632518409	Marionette	TRACE	0 -> [0,448,"WebDriver:ElementClear",{"id":"bc600feb-7279-4a0f-963f-62954d1583bd"}]
+1542632518414	Marionette	TRACE	0 <- [1,448,null,{"value":null}]
+1542632518420	Marionette	TRACE	0 -> [0,449,"WebDriver:FindElement",{"using":"css selector","value":"*[name='address']"}]
+1542632518430	Marionette	TRACE	0 <- [1,449,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"bc600feb-7279-4a0f-963f-62954d1583bd"}}]
+1542632518434	Marionette	TRACE	0 -> [0,450,"WebDriver:ElementSendKeys",{"id":"bc600feb-7279-4a0f-963f-62954d1583bd","text":"Eli Cohen","value":["E","l","i"," ","C","o","h","e","n"]}]
+1542632518444	Marionette	TRACE	0 <- [1,450,null,{"value":null}]
+1542632518447	Marionette	TRACE	0 -> [0,451,"WebDriver:FindElement",{"using":"css selector","value":"*[name='email']"}]
+1542632518449	Marionette	TRACE	0 <- [1,451,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"bf149273-7807-4bb7-bf88-60d814b6a10a"}}]
+1542632518454	Marionette	TRACE	0 -> [0,452,"WebDriver:ElementClick",{"id":"bf149273-7807-4bb7-bf88-60d814b6a10a"}]
+1542632518664	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+1542632518664	Marionette	TRACE	0 <- [1,452,null,{"value":null}]
+1542632518667	Marionette	TRACE	0 -> [0,453,"WebDriver:FindElement",{"using":"css selector","value":"*[name='email']"}]
+1542632518668	Marionette	TRACE	0 <- [1,453,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"bf149273-7807-4bb7-bf88-60d814b6a10a"}}]
+1542632518671	Marionette	TRACE	0 -> [0,454,"WebDriver:ElementClear",{"id":"bf149273-7807-4bb7-bf88-60d814b6a10a"}]
+1542632518673	Marionette	TRACE	0 <- [1,454,null,{"value":null}]
+1542632518676	Marionette	TRACE	0 -> [0,455,"WebDriver:FindElement",{"using":"css selector","value":"*[name='email']"}]
+1542632518677	Marionette	TRACE	0 <- [1,455,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"bf149273-7807-4bb7-bf88-60d814b6a10a"}}]
+1542632518680	Marionette	TRACE	0 -> [0,456,"WebDriver:ElementSendKeys",{"id":"bf149273-7807-4bb7-bf88-60d814b6a10a","text":"micamike@hotmail.com","value":["m","i","c","a","m","i","k","e","@","h","o","t","m","a","i","l",".","c","o","m"]}]
+1542632518691	Marionette	TRACE	0 <- [1,456,null,{"value":null}]
+1542632518696	Marionette	TRACE	0 -> [0,457,"WebDriver:FindElement",{"using":"css selector","value":"*[name='home']"}]
+1542632518707	Marionette	TRACE	0 <- [1,457,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"688446a9-fad4-410a-b985-81bc92ccc7cb"}}]
+1542632518711	Marionette	TRACE	0 -> [0,458,"WebDriver:ElementClick",{"id":"688446a9-fad4-410a-b985-81bc92ccc7cb"}]
+1542632518919	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+1542632518919	Marionette	TRACE	0 <- [1,458,null,{"value":null}]
+1542632518923	Marionette	TRACE	0 -> [0,459,"WebDriver:FindElement",{"using":"css selector","value":"*[name='home']"}]
+1542632518925	Marionette	TRACE	0 <- [1,459,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"688446a9-fad4-410a-b985-81bc92ccc7cb"}}]
+1542632518929	Marionette	TRACE	0 -> [0,460,"WebDriver:ElementClear",{"id":"688446a9-fad4-410a-b985-81bc92ccc7cb"}]
+1542632518932	Marionette	TRACE	0 <- [1,460,null,{"value":null}]
+1542632518935	Marionette	TRACE	0 -> [0,461,"WebDriver:FindElement",{"using":"css selector","value":"*[name='home']"}]
+1542632518937	Marionette	TRACE	0 <- [1,461,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"688446a9-fad4-410a-b985-81bc92ccc7cb"}}]
+1542632518941	Marionette	TRACE	0 -> [0,462,"WebDriver:ElementSendKeys",{"id":"688446a9-fad4-410a-b985-81bc92ccc7cb","text":"0533381248","value":["0","5","3","3","3","8","1","2","4","8"]}]
+1542632518952	Marionette	TRACE	0 <- [1,462,null,{"value":null}]
+1542632518957	Marionette	TRACE	0 -> [0,463,"WebDriver:FindElement",{"using":"css selector","value":"*[name='update']"}]
+1542632518967	Marionette	TRACE	0 <- [1,463,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"919cce5c-5261-45fc-9809-db08ac7fa663"}}]
+1542632518972	Marionette	TRACE	0 -> [0,464,"WebDriver:ElementClick",{"id":"919cce5c-5261-45fc-9809-db08ac7fa663"}]
+1542632518980	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://localhost/addressbook/edit.php?id=87
+1542632519016	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://localhost/addressbook/edit.php?id=87
+1542632519017	Marionette	DEBUG	[6442450945] Received DOM event unload for http://localhost/addressbook/edit.php?id=87
+1542632519030	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://localhost/addressbook/edit.php
+1542632519048	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://localhost/addressbook/edit.php
+1542632519049	Marionette	TRACE	0 <- [1,464,null,{"value":null}]
+1542632519219	Marionette	TRACE	0 -> [0,468,"WebDriver:FindElement",{"using":"css selector","value":"[title=EDIT]"}]
+1542632519226	Marionette	TRACE	0 <- [1,468,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"5f46aef4-1175-4cd2-b3f5-544ccc34e3bd"}}]
+1542632519230	Marionette	TRACE	0 -> [0,469,"WebDriver:ElementClick",{"id":"5f46aef4-1175-4cd2-b3f5-544ccc34e3bd"}]
+1542632519236	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://localhost/addressbook/
+1542632519269	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://localhost/addressbook/
+1542632519270	Marionette	DEBUG	[6442450945] Received DOM event unload for http://localhost/addressbook/
+1542632519278	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://localhost/addressbook/edit.php?id=87
+1542632519302	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://localhost/addressbook/edit.php?id=87
+1542632519304	Marionette	TRACE	0 <- [1,469,null,{"value":null}]
+1542632519313	Marionette	TRACE	0 -> [0,470,"WebDriver:FindElement",{"using":"css selector","value":"*[name='firstname']"}]
+1542632519315	Marionette	TRACE	0 <- [1,470,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"fa88cb55-3c48-4620-88f5-52f152628eb1"}}]
+1542632519321	Marionette	TRACE	0 -> [0,471,"WebDriver:ElementClick",{"id":"fa88cb55-3c48-4620-88f5-52f152628eb1"}]
+1542632519546	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+1542632519547	Marionette	TRACE	0 <- [1,471,null,{"value":null}]
+1542632519551	Marionette	TRACE	0 -> [0,472,"WebDriver:FindElement",{"using":"css selector","value":"*[name='firstname']"}]
+1542632519553	Marionette	TRACE	0 <- [1,472,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"fa88cb55-3c48-4620-88f5-52f152628eb1"}}]
+1542632519556	Marionette	TRACE	0 -> [0,473,"WebDriver:ElementClear",{"id":"fa88cb55-3c48-4620-88f5-52f152628eb1"}]
+1542632519558	Marionette	TRACE	0 <- [1,473,null,{"value":null}]
+1542632519561	Marionette	TRACE	0 -> [0,474,"WebDriver:FindElement",{"using":"css selector","value":"*[name='firstname']"}]
+1542632519562	Marionette	TRACE	0 <- [1,474,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"fa88cb55-3c48-4620-88f5-52f152628eb1"}}]
+1542632519565	Marionette	TRACE	0 -> [0,475,"WebDriver:ElementSendKeys",{"id":"fa88cb55-3c48-4620-88f5-52f152628eb1","text":"David","value":["D","a","v","i","d"]}]
+1542632519578	Marionette	TRACE	0 <- [1,475,null,{"value":null}]
+1542632519582	Marionette	TRACE	0 -> [0,476,"WebDriver:FindElement",{"using":"css selector","value":"*[name='lastname']"}]
+1542632519584	Marionette	TRACE	0 <- [1,476,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"841659a3-0bd2-4280-935e-aba5d3ab4c1e"}}]
+1542632519592	Marionette	TRACE	0 -> [0,477,"WebDriver:ElementClick",{"id":"841659a3-0bd2-4280-935e-aba5d3ab4c1e"}]
+1542632519798	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+1542632519801	Marionette	TRACE	0 <- [1,477,null,{"value":null}]
+1542632519808	Marionette	TRACE	0 -> [0,478,"WebDriver:FindElement",{"using":"css selector","value":"*[name='lastname']"}]
+1542632519813	Marionette	TRACE	0 <- [1,478,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"841659a3-0bd2-4280-935e-aba5d3ab4c1e"}}]
+1542632519819	Marionette	TRACE	0 -> [0,479,"WebDriver:ElementClear",{"id":"841659a3-0bd2-4280-935e-aba5d3ab4c1e"}]
+1542632519826	Marionette	TRACE	0 <- [1,479,null,{"value":null}]
+1542632519832	Marionette	TRACE	0 -> [0,480,"WebDriver:FindElement",{"using":"css selector","value":"*[name='lastname']"}]
+1542632519837	Marionette	TRACE	0 <- [1,480,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"841659a3-0bd2-4280-935e-aba5d3ab4c1e"}}]
+1542632519844	Marionette	TRACE	0 -> [0,481,"WebDriver:ElementSendKeys",{"id":"841659a3-0bd2-4280-935e-aba5d3ab4c1e","text":"Pinto","value":["P","i","n","t","o"]}]
+1542632519857	Marionette	TRACE	0 <- [1,481,null,{"value":null}]
+1542632519860	Marionette	TRACE	0 -> [0,482,"WebDriver:FindElement",{"using":"css selector","value":"*[name='address']"}]
+1542632519863	Marionette	TRACE	0 <- [1,482,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"e56b9c79-0dbb-4451-a219-58c4ad3e0638"}}]
+1542632519866	Marionette	TRACE	0 -> [0,483,"WebDriver:ElementClick",{"id":"e56b9c79-0dbb-4451-a219-58c4ad3e0638"}]
+1542632520078	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+1542632520079	Marionette	TRACE	0 <- [1,483,null,{"value":null}]
+1542632520080	Marionette	TRACE	0 -> [0,484,"WebDriver:FindElement",{"using":"css selector","value":"*[name='address']"}]
+1542632520082	Marionette	TRACE	0 <- [1,484,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"e56b9c79-0dbb-4451-a219-58c4ad3e0638"}}]
+1542632520085	Marionette	TRACE	0 -> [0,485,"WebDriver:ElementClear",{"id":"e56b9c79-0dbb-4451-a219-58c4ad3e0638"}]
+1542632520090	Marionette	TRACE	0 <- [1,485,null,{"value":null}]
+1542632520094	Marionette	TRACE	0 -> [0,486,"WebDriver:FindElement",{"using":"css selector","value":"*[name='address']"}]
+1542632520096	Marionette	TRACE	0 <- [1,486,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"e56b9c79-0dbb-4451-a219-58c4ad3e0638"}}]
+1542632520101	Marionette	TRACE	0 -> [0,487,"WebDriver:ElementSendKeys",{"id":"e56b9c79-0dbb-4451-a219-58c4ad3e0638","text":"Mercaz klita","value":["M","e","r","c","a","z"," ","k","l","i","t","a"]}]
+1542632520117	Marionette	TRACE	0 <- [1,487,null,{"value":null}]
+1542632520119	Marionette	TRACE	0 -> [0,488,"WebDriver:FindElement",{"using":"css selector","value":"*[name='email']"}]
+1542632520122	Marionette	TRACE	0 <- [1,488,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"dd6346fd-b5ac-4089-acad-098512bfc801"}}]
+1542632520127	Marionette	TRACE	0 -> [0,489,"WebDriver:ElementClick",{"id":"dd6346fd-b5ac-4089-acad-098512bfc801"}]
+1542632520349	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+1542632520350	Marionette	TRACE	0 <- [1,489,null,{"value":null}]
+1542632520355	Marionette	TRACE	0 -> [0,490,"WebDriver:FindElement",{"using":"css selector","value":"*[name='email']"}]
+1542632520368	Marionette	TRACE	0 <- [1,490,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"dd6346fd-b5ac-4089-acad-098512bfc801"}}]
+1542632520373	Marionette	TRACE	0 -> [0,491,"WebDriver:ElementClear",{"id":"dd6346fd-b5ac-4089-acad-098512bfc801"}]
+1542632520380	Marionette	TRACE	0 <- [1,491,null,{"value":null}]
+1542632520384	Marionette	TRACE	0 -> [0,492,"WebDriver:FindElement",{"using":"css selector","value":"*[name='email']"}]
+1542632520387	Marionette	TRACE	0 <- [1,492,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"dd6346fd-b5ac-4089-acad-098512bfc801"}}]
+1542632520390	Marionette	TRACE	0 -> [0,493,"WebDriver:ElementSendKeys",{"id":"dd6346fd-b5ac-4089-acad-098512bfc801","text":"DPinto@gmail.com","value":["D","P","i","n","t","o","@","g","m","a","i","l",".","c","o","m"]}]
+1542632520409	Marionette	TRACE	0 <- [1,493,null,{"value":null}]
+1542632520413	Marionette	TRACE	0 -> [0,494,"WebDriver:FindElement",{"using":"css selector","value":"*[name='home']"}]
+1542632520420	Marionette	TRACE	0 <- [1,494,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"7d5a2b9b-83be-432b-9e31-3930048c9465"}}]
+1542632520424	Marionette	TRACE	0 -> [0,495,"WebDriver:ElementClick",{"id":"7d5a2b9b-83be-432b-9e31-3930048c9465"}]
+1542632520633	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+1542632520633	Marionette	TRACE	0 <- [1,495,null,{"value":null}]
+1542632520637	Marionette	TRACE	0 -> [0,496,"WebDriver:FindElement",{"using":"css selector","value":"*[name='home']"}]
+1542632520641	Marionette	TRACE	0 <- [1,496,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"7d5a2b9b-83be-432b-9e31-3930048c9465"}}]
+1542632520644	Marionette	TRACE	0 -> [0,497,"WebDriver:ElementClear",{"id":"7d5a2b9b-83be-432b-9e31-3930048c9465"}]
+1542632520646	Marionette	TRACE	0 <- [1,497,null,{"value":null}]
+1542632520650	Marionette	TRACE	0 -> [0,498,"WebDriver:FindElement",{"using":"css selector","value":"*[name='home']"}]
+1542632520652	Marionette	TRACE	0 <- [1,498,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"7d5a2b9b-83be-432b-9e31-3930048c9465"}}]
+1542632520656	Marionette	TRACE	0 -> [0,499,"WebDriver:ElementSendKeys",{"id":"7d5a2b9b-83be-432b-9e31-3930048c9465","text":"054928745","value":["0","5","4","9","2","8","7","4","5"]}]
+1542632520665	Marionette	TRACE	0 <- [1,499,null,{"value":null}]
+1542632520668	Marionette	TRACE	0 -> [0,500,"WebDriver:FindElement",{"using":"css selector","value":"*[name='update']"}]
+1542632520672	Marionette	TRACE	0 <- [1,500,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"34c4414e-fbc1-473c-bf52-9207137fbc47"}}]
+1542632520676	Marionette	TRACE	0 -> [0,501,"WebDriver:ElementClick",{"id":"34c4414e-fbc1-473c-bf52-9207137fbc47"}]
+1542632520693	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://localhost/addressbook/edit.php?id=87
+1542632520731	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://localhost/addressbook/edit.php?id=87
+1542632520732	Marionette	DEBUG	[6442450945] Received DOM event unload for http://localhost/addressbook/edit.php?id=87
+1542632520746	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://localhost/addressbook/edit.php
+1542632520757	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://localhost/addressbook/edit.php
+1542632520759	Marionette	TRACE	0 <- [1,501,null,{"value":null}]
+1542632520910	Marionette	TRACE	0 -> [0,505,"WebDriver:FindElement",{"using":"css selector","value":"[title=EDIT]"}]
+1542632520912	Marionette	TRACE	0 <- [1,505,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"968a5838-95af-48fa-be34-f42642a32c08"}}]
+1542632520916	Marionette	TRACE	0 -> [0,506,"WebDriver:ElementClick",{"id":"968a5838-95af-48fa-be34-f42642a32c08"}]
+1542632520930	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://localhost/addressbook/
+1542632520965	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://localhost/addressbook/
+1542632520966	Marionette	DEBUG	[6442450945] Received DOM event unload for http://localhost/addressbook/
+1542632520976	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://localhost/addressbook/edit.php?id=13
+1542632521007	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://localhost/addressbook/edit.php?id=13
+1542632521008	Marionette	TRACE	0 <- [1,506,null,{"value":null}]
+1542632521014	Marionette	TRACE	0 -> [0,507,"WebDriver:FindElement",{"using":"css selector","value":"*[name='firstname']"}]
+1542632521017	Marionette	TRACE	0 <- [1,507,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"c1012dea-280f-49de-a843-55cc5b1b628f"}}]
+1542632521029	Marionette	TRACE	0 -> [0,508,"WebDriver:ElementClick",{"id":"c1012dea-280f-49de-a843-55cc5b1b628f"}]
+1542632521244	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+1542632521244	Marionette	TRACE	0 <- [1,508,null,{"value":null}]
+1542632521248	Marionette	TRACE	0 -> [0,509,"WebDriver:FindElement",{"using":"css selector","value":"*[name='firstname']"}]
+1542632521250	Marionette	TRACE	0 <- [1,509,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"c1012dea-280f-49de-a843-55cc5b1b628f"}}]
+1542632521253	Marionette	TRACE	0 -> [0,510,"WebDriver:ElementClear",{"id":"c1012dea-280f-49de-a843-55cc5b1b628f"}]
+1542632521255	Marionette	TRACE	0 <- [1,510,null,{"value":null}]
+1542632521258	Marionette	TRACE	0 -> [0,511,"WebDriver:FindElement",{"using":"css selector","value":"*[name='firstname']"}]
+1542632521260	Marionette	TRACE	0 <- [1,511,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"c1012dea-280f-49de-a843-55cc5b1b628f"}}]
+1542632521264	Marionette	TRACE	0 -> [0,512,"WebDriver:ElementSendKeys",{"id":"c1012dea-280f-49de-a843-55cc5b1b628f","text":"Steven","value":["S","t","e","v","e","n"]}]
+1542632521271	Marionette	TRACE	0 <- [1,512,null,{"value":null}]
+1542632521275	Marionette	TRACE	0 -> [0,513,"WebDriver:FindElement",{"using":"css selector","value":"*[name='lastname']"}]
+1542632521278	Marionette	TRACE	0 <- [1,513,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"6a7e0924-02a7-41c2-83a4-6dd741a7f8c3"}}]
+1542632521282	Marionette	TRACE	0 -> [0,514,"WebDriver:ElementClick",{"id":"6a7e0924-02a7-41c2-83a4-6dd741a7f8c3"}]
+1542632521493	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+1542632521494	Marionette	TRACE	0 <- [1,514,null,{"value":null}]
+1542632521498	Marionette	TRACE	0 -> [0,515,"WebDriver:FindElement",{"using":"css selector","value":"*[name='lastname']"}]
+1542632521502	Marionette	TRACE	0 <- [1,515,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"6a7e0924-02a7-41c2-83a4-6dd741a7f8c3"}}]
+1542632521507	Marionette	TRACE	0 -> [0,516,"WebDriver:ElementClear",{"id":"6a7e0924-02a7-41c2-83a4-6dd741a7f8c3"}]
+1542632521513	Marionette	TRACE	0 <- [1,516,null,{"value":null}]
+1542632521517	Marionette	TRACE	0 -> [0,517,"WebDriver:FindElement",{"using":"css selector","value":"*[name='lastname']"}]
+1542632521519	Marionette	TRACE	0 <- [1,517,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"6a7e0924-02a7-41c2-83a4-6dd741a7f8c3"}}]
+1542632521523	Marionette	TRACE	0 -> [0,518,"WebDriver:ElementSendKeys",{"id":"6a7e0924-02a7-41c2-83a4-6dd741a7f8c3","text":"Sarfati","value":["S","a","r","f","a","t","i"]}]
+1542632521531	Marionette	TRACE	0 <- [1,518,null,{"value":null}]
+1542632521535	Marionette	TRACE	0 -> [0,519,"WebDriver:FindElement",{"using":"css selector","value":"*[name='address']"}]
+1542632521545	Marionette	TRACE	0 <- [1,519,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"db4e66d4-9705-4df4-b3ce-04a0c3e54fec"}}]
+1542632521549	Marionette	TRACE	0 -> [0,520,"WebDriver:ElementClick",{"id":"db4e66d4-9705-4df4-b3ce-04a0c3e54fec"}]
+1542632521758	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+1542632521759	Marionette	TRACE	0 <- [1,520,null,{"value":null}]
+1542632521761	Marionette	TRACE	0 -> [0,521,"WebDriver:FindElement",{"using":"css selector","value":"*[name='address']"}]
+1542632521763	Marionette	TRACE	0 <- [1,521,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"db4e66d4-9705-4df4-b3ce-04a0c3e54fec"}}]
+1542632521765	Marionette	TRACE	0 -> [0,522,"WebDriver:ElementClear",{"id":"db4e66d4-9705-4df4-b3ce-04a0c3e54fec"}]
+1542632521767	Marionette	TRACE	0 <- [1,522,null,{"value":null}]
+1542632521770	Marionette	TRACE	0 -> [0,523,"WebDriver:FindElement",{"using":"css selector","value":"*[name='address']"}]
+1542632521775	Marionette	TRACE	0 <- [1,523,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"db4e66d4-9705-4df4-b3ce-04a0c3e54fec"}}]
+1542632521779	Marionette	TRACE	0 -> [0,524,"WebDriver:ElementSendKeys",{"id":"db4e66d4-9705-4df4-b3ce-04a0c3e54fec","text":"770 States","value":["7","7","0"," ","S","t","a","t","e","s"]}]
+1542632521792	Marionette	TRACE	0 <- [1,524,null,{"value":null}]
+1542632521796	Marionette	TRACE	0 -> [0,525,"WebDriver:FindElement",{"using":"css selector","value":"*[name='email']"}]
+1542632521800	Marionette	TRACE	0 <- [1,525,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"cca70919-ce99-4a37-b3e6-027d9f48144e"}}]
+1542632521807	Marionette	TRACE	0 -> [0,526,"WebDriver:ElementClick",{"id":"cca70919-ce99-4a37-b3e6-027d9f48144e"}]
+1542632522016	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+1542632522016	Marionette	TRACE	0 <- [1,526,null,{"value":null}]
+1542632522021	Marionette	TRACE	0 -> [0,527,"WebDriver:FindElement",{"using":"css selector","value":"*[name='email']"}]
+1542632522024	Marionette	TRACE	0 <- [1,527,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"cca70919-ce99-4a37-b3e6-027d9f48144e"}}]
+1542632522031	Marionette	TRACE	0 -> [0,528,"WebDriver:ElementClear",{"id":"cca70919-ce99-4a37-b3e6-027d9f48144e"}]
+1542632522036	Marionette	TRACE	0 <- [1,528,null,{"value":null}]
+1542632522044	Marionette	TRACE	0 -> [0,529,"WebDriver:FindElement",{"using":"css selector","value":"*[name='email']"}]
+1542632522046	Marionette	TRACE	0 <- [1,529,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"cca70919-ce99-4a37-b3e6-027d9f48144e"}}]
+1542632522050	Marionette	TRACE	0 -> [0,530,"WebDriver:ElementSendKeys",{"id":"cca70919-ce99-4a37-b3e6-027d9f48144e","text":"SS55@yahoo.fr","value":["S","S","5","5","@","y","a","h","o","o",".","f","r"]}]
+1542632522065	Marionette	TRACE	0 <- [1,530,null,{"value":null}]
+1542632522071	Marionette	TRACE	0 -> [0,531,"WebDriver:FindElement",{"using":"css selector","value":"*[name='home']"}]
+1542632522098	Marionette	TRACE	0 <- [1,531,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"608656dc-907c-4203-a9ae-e402a28b9c80"}}]
+1542632522103	Marionette	TRACE	0 -> [0,532,"WebDriver:ElementClick",{"id":"608656dc-907c-4203-a9ae-e402a28b9c80"}]
+1542632522311	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+1542632522312	Marionette	TRACE	0 <- [1,532,null,{"value":null}]
+1542632522315	Marionette	TRACE	0 -> [0,533,"WebDriver:FindElement",{"using":"css selector","value":"*[name='home']"}]
+1542632522317	Marionette	TRACE	0 <- [1,533,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"608656dc-907c-4203-a9ae-e402a28b9c80"}}]
+1542632522321	Marionette	TRACE	0 -> [0,534,"WebDriver:ElementClear",{"id":"608656dc-907c-4203-a9ae-e402a28b9c80"}]
+1542632522323	Marionette	TRACE	0 <- [1,534,null,{"value":null}]
+1542632522325	Marionette	TRACE	0 -> [0,535,"WebDriver:FindElement",{"using":"css selector","value":"*[name='home']"}]
+1542632522327	Marionette	TRACE	0 <- [1,535,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"608656dc-907c-4203-a9ae-e402a28b9c80"}}]
+1542632522330	Marionette	TRACE	0 -> [0,536,"WebDriver:ElementSendKeys",{"id":"608656dc-907c-4203-a9ae-e402a28b9c80","text":"055555555","value":["0","5","5","5","5","5","5","5","5"]}]
+1542632522344	Marionette	TRACE	0 <- [1,536,null,{"value":null}]
+1542632522348	Marionette	TRACE	0 -> [0,537,"WebDriver:FindElement",{"using":"css selector","value":"*[name='update']"}]
+1542632522359	Marionette	TRACE	0 <- [1,537,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"69c792a7-73c6-4b09-84cf-bb5a2ceecba7"}}]
+1542632522365	Marionette	TRACE	0 -> [0,538,"WebDriver:ElementClick",{"id":"69c792a7-73c6-4b09-84cf-bb5a2ceecba7"}]
+1542632522376	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://localhost/addressbook/edit.php?id=13
+1542632522426	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://localhost/addressbook/edit.php?id=13
+1542632522427	Marionette	DEBUG	[6442450945] Received DOM event unload for http://localhost/addressbook/edit.php?id=13
+1542632522439	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://localhost/addressbook/edit.php
+1542632522447	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://localhost/addressbook/edit.php
+1542632522448	Marionette	TRACE	0 <- [1,538,null,{"value":null}]
+]]></system-err>
+</testsuite>
