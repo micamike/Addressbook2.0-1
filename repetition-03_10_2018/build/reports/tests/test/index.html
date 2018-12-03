@@ -20,13 +20,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">19</div>
+<div class="counter">20</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">6</div>
 <p>failures</p>
 </div>
 </td>
@@ -38,7 +38,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">33.899s</div>
+<div class="counter">40.383s</div>
 <p>duration</p>
 </div>
 </td>
@@ -47,8 +47,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">70%</div>
 <p>successful</p>
 </div>
 </td>
@@ -58,13 +58,45 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Packages</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Classes</a>
+<a href="#tab1">Packages</a>
+</li>
+<li>
+<a href="#tab2">Classes</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<ul class="linkList">
+<li>
+<a href="classes/com.telran.repeat.tests.ContactCreationTests.html">ContactCreationTests</a>.
+<a href="classes/com.telran.repeat.tests.ContactCreationTests.html#createContactTest[0](Contact{fName='Mickael', lName='Aboulkheir', address='Eli Cohen', email='micamike@hotmail.com', phoneHome='0533381248', group='null'})">createContactTest[0](Contact{fName='Mickael', lName='Aboulkheir', address='Eli Cohen', email='micamike@hotmail.com', phoneHome='0533381248', group='null'})</a>
+</li>
+<li>
+<a href="classes/com.telran.repeat.tests.ContactCreationTests.html">ContactCreationTests</a>.
+<a href="classes/com.telran.repeat.tests.ContactCreationTests.html#createContactTest[1](Contact{fName='David', lName='Pinto', address='Mercaz klita', email='DPinto@gmail.com', phoneHome='054928745', group='null'})">createContactTest[1](Contact{fName='David', lName='Pinto', address='Mercaz klita', email='DPinto@gmail.com', phoneHome='054928745', group='null'})</a>
+</li>
+<li>
+<a href="classes/com.telran.repeat.tests.ContactCreationTests.html">ContactCreationTests</a>.
+<a href="classes/com.telran.repeat.tests.ContactCreationTests.html#createContactTest[2](Contact{fName='Steven', lName='Sarfati', address='770 States', email='SS55@yahoo.fr', phoneHome='055555555', group='null'})">createContactTest[2](Contact{fName='Steven', lName='Sarfati', address='770 States', email='SS55@yahoo.fr', phoneHome='055555555', group='null'})</a>
+</li>
+<li>
+<a href="classes/com.telran.repeat.tests.ContactModificationTests.html">ContactModificationTests</a>.
+<a href="classes/com.telran.repeat.tests.ContactModificationTests.html#testsContactModification[0](Contact{fName='Mickael', lName='Aboulkheir', address='Eli Cohen', email='micamike@hotmail.com', phoneHome='0533381248', group='null'})">testsContactModification[0](Contact{fName='Mickael', lName='Aboulkheir', address='Eli Cohen', email='micamike@hotmail.com', phoneHome='0533381248', group='null'})</a>
+</li>
+<li>
+<a href="classes/com.telran.repeat.tests.ContactModificationTests.html">ContactModificationTests</a>.
+<a href="classes/com.telran.repeat.tests.ContactModificationTests.html#testsContactModification[1](Contact{fName='David', lName='Pinto', address='Mercaz klita', email='DPinto@gmail.com', phoneHome='054928745', group='null'})">testsContactModification[1](Contact{fName='David', lName='Pinto', address='Mercaz klita', email='DPinto@gmail.com', phoneHome='054928745', group='null'})</a>
+</li>
+<li>
+<a href="classes/com.telran.repeat.tests.ContactModificationTests.html">ContactModificationTests</a>.
+<a href="classes/com.telran.repeat.tests.ContactModificationTests.html#testsContactModification[2](Contact{fName='Steven', lName='Sarfati', address='770 States', email='SS55@yahoo.fr', phoneHome='055555555', group='null'})">testsContactModification[2](Contact{fName='Steven', lName='Sarfati', address='770 States', email='SS55@yahoo.fr', phoneHome='055555555', group='null'})</a>
+</li>
+</ul>
+</div>
+<div id="tab1" class="tab">
 <h2>Packages</h2>
 <table>
 <thead>
@@ -79,19 +111,19 @@
 </thead>
 <tbody>
 <tr>
-<td class="success">
+<td class="failures">
 <a href="packages/com.telran.repeat.tests.html">com.telran.repeat.tests</a>
 </td>
-<td>19</td>
+<td>20</td>
+<td>6</td>
 <td>0</td>
-<td>0</td>
-<td>33.899s</td>
-<td class="success">100%</td>
+<td>40.383s</td>
+<td class="failures">70%</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Classes</h2>
 <table>
 <thead>
@@ -106,13 +138,13 @@
 </thead>
 <tbody>
 <tr>
-<td class="success"/>
+<td class="failures"/>
 <a href="classes/com.telran.repeat.tests.ContactCreationTests.html">com.telran.repeat.tests.ContactCreationTests</a>
+<td>4</td>
 <td>3</td>
 <td>0</td>
-<td>0</td>
-<td>14.439s</td>
-<td class="success">100%</td>
+<td>6.870s</td>
+<td class="failures">25%</td>
 </tr>
 <tr>
 <td class="success"/>
@@ -120,17 +152,17 @@
 <td>2</td>
 <td>0</td>
 <td>0</td>
-<td>0.817s</td>
+<td>6.716s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
-<td class="success"/>
+<td class="failures"/>
 <a href="classes/com.telran.repeat.tests.ContactModificationTests.html">com.telran.repeat.tests.ContactModificationTests</a>
 <td>3</td>
+<td>3</td>
 <td>0</td>
-<td>0</td>
-<td>4.599s</td>
-<td class="success">100%</td>
+<td>17.582s</td>
+<td class="failures">0%</td>
 </tr>
 <tr>
 <td class="success"/>
@@ -138,7 +170,7 @@
 <td>4</td>
 <td>0</td>
 <td>0</td>
-<td>5.332s</td>
+<td>3.848s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -147,7 +179,7 @@
 <td>2</td>
 <td>0</td>
 <td>0</td>
-<td>1.226s</td>
+<td>0.634s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -156,7 +188,7 @@
 <td>5</td>
 <td>0</td>
 <td>0</td>
-<td>7.486s</td>
+<td>4.733s</td>
 <td class="success">100%</td>
 </tr>
 </tbody>
@@ -170,7 +202,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.0</a> at 19-Nov-2018 15:02:04</p>
+<a href="http://www.gradle.org">Gradle 4.0</a> at 03-Dec-2018 13:56:28</p>
 </div>
 </div>
 </body>

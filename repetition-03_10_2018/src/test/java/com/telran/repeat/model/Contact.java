@@ -1,11 +1,15 @@
 package com.telran.repeat.model;
 
+import java.io.File;
+
 public class Contact {
   private String fName;
   private String lName;
   private String address;
   private String email;
   private String phoneHome;
+  private String group;
+  private File photo;
 
   @Override
   public String toString() {
@@ -15,6 +19,7 @@ public class Contact {
             ", address='" + address + '\'' +
             ", email='" + email + '\'' +
             ", phoneHome='" + phoneHome + '\'' +
+            ", group='" + group + '\'' +
             '}';
   }
 
@@ -43,6 +48,18 @@ public class Contact {
     return this;
   }
 
+  public Contact setGroup(String group) {
+    this.group = group;
+    return this;
+  }
+
+  public Contact setPhoto(File photo) {
+    this.photo = photo;
+    return this;
+  }
+
+  public File getPhoto() { return photo; }
+
   public String getfName() {
     return fName;
   }
@@ -62,4 +79,6 @@ public class Contact {
   public String getPhoneHome() {
     return phoneHome;
   }
+
+  public String getGroup() { return group;  }
 }

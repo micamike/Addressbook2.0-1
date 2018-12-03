@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">3</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">4.599s</div>
+<div class="counter">17.582s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,13 +61,274 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Tests</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Standard error</a>
+<a href="#tab1">Tests</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testsContactModification[0](Contact{fName='Mickael', lName='Aboulkheir', address='Eli Cohen', email='micamike@hotmail.com', phoneHome='0533381248', group='null'})"></a>
+<h3 class="failures">testsContactModification[0](Contact{fName='Mickael', lName='Aboulkheir', address='Eli Cohen', email='micamike@hotmail.com', phoneHome='0533381248', group='null'})</h3>
+<span class="code">
+<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;name&quot;,&quot;selector&quot;:&quot;new_group&quot;}
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-PUIG3K0', ip: '172.27.32.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\mike\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59975}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: 4b1ae34f5c95b16806f99476ea19dcb7
+*** Element info: {Using=name, value=new_group}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.telran.repeat.manager.ContactHelper.fillContactForm(ContactHelper.java:24)
+	at com.telran.repeat.tests.ContactModificationTests.testsContactModification(ContactModificationTests.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:129)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:88)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy1.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testsContactModification[1](Contact{fName='David', lName='Pinto', address='Mercaz klita', email='DPinto@gmail.com', phoneHome='054928745', group='null'})"></a>
+<h3 class="failures">testsContactModification[1](Contact{fName='David', lName='Pinto', address='Mercaz klita', email='DPinto@gmail.com', phoneHome='054928745', group='null'})</h3>
+<span class="code">
+<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;name&quot;,&quot;selector&quot;:&quot;new_group&quot;}
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-PUIG3K0', ip: '172.27.32.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\mike\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59975}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: 4b1ae34f5c95b16806f99476ea19dcb7
+*** Element info: {Using=name, value=new_group}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.telran.repeat.manager.ContactHelper.fillContactForm(ContactHelper.java:24)
+	at com.telran.repeat.tests.ContactModificationTests.testsContactModification(ContactModificationTests.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:129)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:88)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy1.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testsContactModification[2](Contact{fName='Steven', lName='Sarfati', address='770 States', email='SS55@yahoo.fr', phoneHome='055555555', group='null'})"></a>
+<h3 class="failures">testsContactModification[2](Contact{fName='Steven', lName='Sarfati', address='770 States', email='SS55@yahoo.fr', phoneHome='055555555', group='null'})</h3>
+<span class="code">
+<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;name&quot;,&quot;selector&quot;:&quot;new_group&quot;}
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-PUIG3K0', ip: '172.27.32.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\mike\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59975}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: 4b1ae34f5c95b16806f99476ea19dcb7
+*** Element info: {Using=name, value=new_group}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.telran.repeat.manager.ContactHelper.fillContactForm(ContactHelper.java:24)
+	at com.telran.repeat.tests.ContactModificationTests.testsContactModification(ContactModificationTests.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:129)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:88)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy1.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -78,276 +339,21 @@
 </tr>
 </thead>
 <tr>
-<td class="success">testsContactModification[0](Contact{fName='Mickael', lName='Aboulkheir', address='Eli Cohen', email='micamike@hotmail.com', phoneHome='0533381248'})</td>
-<td>1.507s</td>
-<td class="success">passed</td>
+<td class="failures">testsContactModification[0](Contact{fName='Mickael', lName='Aboulkheir', address='Eli Cohen', email='micamike@hotmail.com', phoneHome='0533381248', group='null'})</td>
+<td>5.900s</td>
+<td class="failures">failed</td>
 </tr>
 <tr>
-<td class="success">testsContactModification[1](Contact{fName='David', lName='Pinto', address='Mercaz klita', email='DPinto@gmail.com', phoneHome='054928745'})</td>
-<td>1.545s</td>
-<td class="success">passed</td>
+<td class="failures">testsContactModification[1](Contact{fName='David', lName='Pinto', address='Mercaz klita', email='DPinto@gmail.com', phoneHome='054928745', group='null'})</td>
+<td>5.914s</td>
+<td class="failures">failed</td>
 </tr>
 <tr>
-<td class="success">testsContactModification[2](Contact{fName='Steven', lName='Sarfati', address='770 States', email='SS55@yahoo.fr', phoneHome='055555555'})</td>
-<td>1.547s</td>
-<td class="success">passed</td>
+<td class="failures">testsContactModification[2](Contact{fName='Steven', lName='Sarfati', address='770 States', email='SS55@yahoo.fr', phoneHome='055555555', group='null'})</td>
+<td>5.768s</td>
+<td class="failures">failed</td>
 </tr>
 </table>
-</div>
-<div id="tab1" class="tab">
-<h2>Standard error</h2>
-<span class="code">
-<pre>1542632517548	Marionette	TRACE	0 -&gt; [0,431,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;[title=EDIT]&quot;}]
-1542632517550	Marionette	TRACE	0 &lt;- [1,431,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;98f408d2-5747-41b9-ae53-7154ed711901&quot;}}]
-1542632517553	Marionette	TRACE	0 -&gt; [0,432,&quot;WebDriver:ElementClick&quot;,{&quot;id&quot;:&quot;98f408d2-5747-41b9-ae53-7154ed711901&quot;}]
-1542632517568	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://localhost/addressbook/
-1542632517612	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://localhost/addressbook/
-1542632517613	Marionette	DEBUG	[6442450945] Received DOM event unload for http://localhost/addressbook/
-1542632517622	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://localhost/addressbook/edit.php?id=87
-1542632517652	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://localhost/addressbook/edit.php?id=87
-1542632517654	Marionette	TRACE	0 &lt;- [1,432,null,{&quot;value&quot;:null}]
-1542632517663	Marionette	TRACE	0 -&gt; [0,433,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='firstname']&quot;}]
-1542632517665	Marionette	TRACE	0 &lt;- [1,433,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;01d61244-c195-4cb2-b2dc-7d305fed814e&quot;}}]
-1542632517668	Marionette	TRACE	0 -&gt; [0,434,&quot;WebDriver:ElementClick&quot;,{&quot;id&quot;:&quot;01d61244-c195-4cb2-b2dc-7d305fed814e&quot;}]
-1542632517883	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
-1542632517884	Marionette	TRACE	0 &lt;- [1,434,null,{&quot;value&quot;:null}]
-1542632517890	Marionette	TRACE	0 -&gt; [0,435,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='firstname']&quot;}]
-1542632517893	Marionette	TRACE	0 &lt;- [1,435,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;01d61244-c195-4cb2-b2dc-7d305fed814e&quot;}}]
-1542632517898	Marionette	TRACE	0 -&gt; [0,436,&quot;WebDriver:ElementClear&quot;,{&quot;id&quot;:&quot;01d61244-c195-4cb2-b2dc-7d305fed814e&quot;}]
-1542632517904	Marionette	TRACE	0 &lt;- [1,436,null,{&quot;value&quot;:null}]
-1542632517908	Marionette	TRACE	0 -&gt; [0,437,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='firstname']&quot;}]
-1542632517912	Marionette	TRACE	0 &lt;- [1,437,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;01d61244-c195-4cb2-b2dc-7d305fed814e&quot;}}]
-1542632517917	Marionette	TRACE	0 -&gt; [0,438,&quot;WebDriver:ElementSendKeys&quot;,{&quot;id&quot;:&quot;01d61244-c195-4cb2-b2dc-7d305fed814e&quot;,&quot;text&quot;:&quot;Mickael&quot;,&quot;value&quot;:[&quot;M&quot;,&quot;i&quot;,&quot;c&quot;,&quot;k&quot;,&quot;a&quot;,&quot;e&quot;,&quot;l&quot;]}]
-1542632517931	Marionette	TRACE	0 &lt;- [1,438,null,{&quot;value&quot;:null}]
-1542632517935	Marionette	TRACE	0 -&gt; [0,439,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='lastname']&quot;}]
-1542632517940	Marionette	TRACE	0 &lt;- [1,439,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;e2cfb9ad-cb58-421a-b906-4a65bbd36a9f&quot;}}]
-1542632517943	Marionette	TRACE	0 -&gt; [0,440,&quot;WebDriver:ElementClick&quot;,{&quot;id&quot;:&quot;e2cfb9ad-cb58-421a-b906-4a65bbd36a9f&quot;}]
-1542632518150	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
-1542632518151	Marionette	TRACE	0 &lt;- [1,440,null,{&quot;value&quot;:null}]
-1542632518154	Marionette	TRACE	0 -&gt; [0,441,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='lastname']&quot;}]
-1542632518155	Marionette	TRACE	0 &lt;- [1,441,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;e2cfb9ad-cb58-421a-b906-4a65bbd36a9f&quot;}}]
-1542632518158	Marionette	TRACE	0 -&gt; [0,442,&quot;WebDriver:ElementClear&quot;,{&quot;id&quot;:&quot;e2cfb9ad-cb58-421a-b906-4a65bbd36a9f&quot;}]
-1542632518160	Marionette	TRACE	0 &lt;- [1,442,null,{&quot;value&quot;:null}]
-1542632518163	Marionette	TRACE	0 -&gt; [0,443,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='lastname']&quot;}]
-1542632518164	Marionette	TRACE	0 &lt;- [1,443,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;e2cfb9ad-cb58-421a-b906-4a65bbd36a9f&quot;}}]
-1542632518167	Marionette	TRACE	0 -&gt; [0,444,&quot;WebDriver:ElementSendKeys&quot;,{&quot;id&quot;:&quot;e2cfb9ad-cb58-421a-b906-4a65bbd36a9f&quot;,&quot;text&quot;:&quot;Aboulkheir&quot;,&quot;value&quot;:[&quot;A&quot;,&quot;b&quot;,&quot;o&quot;,&quot;u&quot;,&quot;l&quot;,&quot;k&quot;,&quot;h&quot;,&quot;e&quot;,&quot;i&quot;,&quot;r&quot;]}]
-1542632518176	Marionette	TRACE	0 &lt;- [1,444,null,{&quot;value&quot;:null}]
-1542632518180	Marionette	TRACE	0 -&gt; [0,445,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='address']&quot;}]
-1542632518182	Marionette	TRACE	0 &lt;- [1,445,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;bc600feb-7279-4a0f-963f-62954d1583bd&quot;}}]
-1542632518185	Marionette	TRACE	0 -&gt; [0,446,&quot;WebDriver:ElementClick&quot;,{&quot;id&quot;:&quot;bc600feb-7279-4a0f-963f-62954d1583bd&quot;}]
-1542632518394	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
-1542632518395	Marionette	TRACE	0 &lt;- [1,446,null,{&quot;value&quot;:null}]
-1542632518400	Marionette	TRACE	0 -&gt; [0,447,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='address']&quot;}]
-1542632518404	Marionette	TRACE	0 &lt;- [1,447,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;bc600feb-7279-4a0f-963f-62954d1583bd&quot;}}]
-1542632518409	Marionette	TRACE	0 -&gt; [0,448,&quot;WebDriver:ElementClear&quot;,{&quot;id&quot;:&quot;bc600feb-7279-4a0f-963f-62954d1583bd&quot;}]
-1542632518414	Marionette	TRACE	0 &lt;- [1,448,null,{&quot;value&quot;:null}]
-1542632518420	Marionette	TRACE	0 -&gt; [0,449,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='address']&quot;}]
-1542632518430	Marionette	TRACE	0 &lt;- [1,449,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;bc600feb-7279-4a0f-963f-62954d1583bd&quot;}}]
-1542632518434	Marionette	TRACE	0 -&gt; [0,450,&quot;WebDriver:ElementSendKeys&quot;,{&quot;id&quot;:&quot;bc600feb-7279-4a0f-963f-62954d1583bd&quot;,&quot;text&quot;:&quot;Eli Cohen&quot;,&quot;value&quot;:[&quot;E&quot;,&quot;l&quot;,&quot;i&quot;,&quot; &quot;,&quot;C&quot;,&quot;o&quot;,&quot;h&quot;,&quot;e&quot;,&quot;n&quot;]}]
-1542632518444	Marionette	TRACE	0 &lt;- [1,450,null,{&quot;value&quot;:null}]
-1542632518447	Marionette	TRACE	0 -&gt; [0,451,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='email']&quot;}]
-1542632518449	Marionette	TRACE	0 &lt;- [1,451,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;bf149273-7807-4bb7-bf88-60d814b6a10a&quot;}}]
-1542632518454	Marionette	TRACE	0 -&gt; [0,452,&quot;WebDriver:ElementClick&quot;,{&quot;id&quot;:&quot;bf149273-7807-4bb7-bf88-60d814b6a10a&quot;}]
-1542632518664	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
-1542632518664	Marionette	TRACE	0 &lt;- [1,452,null,{&quot;value&quot;:null}]
-1542632518667	Marionette	TRACE	0 -&gt; [0,453,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='email']&quot;}]
-1542632518668	Marionette	TRACE	0 &lt;- [1,453,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;bf149273-7807-4bb7-bf88-60d814b6a10a&quot;}}]
-1542632518671	Marionette	TRACE	0 -&gt; [0,454,&quot;WebDriver:ElementClear&quot;,{&quot;id&quot;:&quot;bf149273-7807-4bb7-bf88-60d814b6a10a&quot;}]
-1542632518673	Marionette	TRACE	0 &lt;- [1,454,null,{&quot;value&quot;:null}]
-1542632518676	Marionette	TRACE	0 -&gt; [0,455,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='email']&quot;}]
-1542632518677	Marionette	TRACE	0 &lt;- [1,455,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;bf149273-7807-4bb7-bf88-60d814b6a10a&quot;}}]
-1542632518680	Marionette	TRACE	0 -&gt; [0,456,&quot;WebDriver:ElementSendKeys&quot;,{&quot;id&quot;:&quot;bf149273-7807-4bb7-bf88-60d814b6a10a&quot;,&quot;text&quot;:&quot;micamike@hotmail.com&quot;,&quot;value&quot;:[&quot;m&quot;,&quot;i&quot;,&quot;c&quot;,&quot;a&quot;,&quot;m&quot;,&quot;i&quot;,&quot;k&quot;,&quot;e&quot;,&quot;@&quot;,&quot;h&quot;,&quot;o&quot;,&quot;t&quot;,&quot;m&quot;,&quot;a&quot;,&quot;i&quot;,&quot;l&quot;,&quot;.&quot;,&quot;c&quot;,&quot;o&quot;,&quot;m&quot;]}]
-1542632518691	Marionette	TRACE	0 &lt;- [1,456,null,{&quot;value&quot;:null}]
-1542632518696	Marionette	TRACE	0 -&gt; [0,457,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='home']&quot;}]
-1542632518707	Marionette	TRACE	0 &lt;- [1,457,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;688446a9-fad4-410a-b985-81bc92ccc7cb&quot;}}]
-1542632518711	Marionette	TRACE	0 -&gt; [0,458,&quot;WebDriver:ElementClick&quot;,{&quot;id&quot;:&quot;688446a9-fad4-410a-b985-81bc92ccc7cb&quot;}]
-1542632518919	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
-1542632518919	Marionette	TRACE	0 &lt;- [1,458,null,{&quot;value&quot;:null}]
-1542632518923	Marionette	TRACE	0 -&gt; [0,459,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='home']&quot;}]
-1542632518925	Marionette	TRACE	0 &lt;- [1,459,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;688446a9-fad4-410a-b985-81bc92ccc7cb&quot;}}]
-1542632518929	Marionette	TRACE	0 -&gt; [0,460,&quot;WebDriver:ElementClear&quot;,{&quot;id&quot;:&quot;688446a9-fad4-410a-b985-81bc92ccc7cb&quot;}]
-1542632518932	Marionette	TRACE	0 &lt;- [1,460,null,{&quot;value&quot;:null}]
-1542632518935	Marionette	TRACE	0 -&gt; [0,461,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='home']&quot;}]
-1542632518937	Marionette	TRACE	0 &lt;- [1,461,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;688446a9-fad4-410a-b985-81bc92ccc7cb&quot;}}]
-1542632518941	Marionette	TRACE	0 -&gt; [0,462,&quot;WebDriver:ElementSendKeys&quot;,{&quot;id&quot;:&quot;688446a9-fad4-410a-b985-81bc92ccc7cb&quot;,&quot;text&quot;:&quot;0533381248&quot;,&quot;value&quot;:[&quot;0&quot;,&quot;5&quot;,&quot;3&quot;,&quot;3&quot;,&quot;3&quot;,&quot;8&quot;,&quot;1&quot;,&quot;2&quot;,&quot;4&quot;,&quot;8&quot;]}]
-1542632518952	Marionette	TRACE	0 &lt;- [1,462,null,{&quot;value&quot;:null}]
-1542632518957	Marionette	TRACE	0 -&gt; [0,463,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='update']&quot;}]
-1542632518967	Marionette	TRACE	0 &lt;- [1,463,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;919cce5c-5261-45fc-9809-db08ac7fa663&quot;}}]
-1542632518972	Marionette	TRACE	0 -&gt; [0,464,&quot;WebDriver:ElementClick&quot;,{&quot;id&quot;:&quot;919cce5c-5261-45fc-9809-db08ac7fa663&quot;}]
-1542632518980	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://localhost/addressbook/edit.php?id=87
-1542632519016	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://localhost/addressbook/edit.php?id=87
-1542632519017	Marionette	DEBUG	[6442450945] Received DOM event unload for http://localhost/addressbook/edit.php?id=87
-1542632519030	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://localhost/addressbook/edit.php
-1542632519048	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://localhost/addressbook/edit.php
-1542632519049	Marionette	TRACE	0 &lt;- [1,464,null,{&quot;value&quot;:null}]
-1542632519219	Marionette	TRACE	0 -&gt; [0,468,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;[title=EDIT]&quot;}]
-1542632519226	Marionette	TRACE	0 &lt;- [1,468,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;5f46aef4-1175-4cd2-b3f5-544ccc34e3bd&quot;}}]
-1542632519230	Marionette	TRACE	0 -&gt; [0,469,&quot;WebDriver:ElementClick&quot;,{&quot;id&quot;:&quot;5f46aef4-1175-4cd2-b3f5-544ccc34e3bd&quot;}]
-1542632519236	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://localhost/addressbook/
-1542632519269	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://localhost/addressbook/
-1542632519270	Marionette	DEBUG	[6442450945] Received DOM event unload for http://localhost/addressbook/
-1542632519278	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://localhost/addressbook/edit.php?id=87
-1542632519302	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://localhost/addressbook/edit.php?id=87
-1542632519304	Marionette	TRACE	0 &lt;- [1,469,null,{&quot;value&quot;:null}]
-1542632519313	Marionette	TRACE	0 -&gt; [0,470,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='firstname']&quot;}]
-1542632519315	Marionette	TRACE	0 &lt;- [1,470,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;fa88cb55-3c48-4620-88f5-52f152628eb1&quot;}}]
-1542632519321	Marionette	TRACE	0 -&gt; [0,471,&quot;WebDriver:ElementClick&quot;,{&quot;id&quot;:&quot;fa88cb55-3c48-4620-88f5-52f152628eb1&quot;}]
-1542632519546	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
-1542632519547	Marionette	TRACE	0 &lt;- [1,471,null,{&quot;value&quot;:null}]
-1542632519551	Marionette	TRACE	0 -&gt; [0,472,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='firstname']&quot;}]
-1542632519553	Marionette	TRACE	0 &lt;- [1,472,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;fa88cb55-3c48-4620-88f5-52f152628eb1&quot;}}]
-1542632519556	Marionette	TRACE	0 -&gt; [0,473,&quot;WebDriver:ElementClear&quot;,{&quot;id&quot;:&quot;fa88cb55-3c48-4620-88f5-52f152628eb1&quot;}]
-1542632519558	Marionette	TRACE	0 &lt;- [1,473,null,{&quot;value&quot;:null}]
-1542632519561	Marionette	TRACE	0 -&gt; [0,474,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='firstname']&quot;}]
-1542632519562	Marionette	TRACE	0 &lt;- [1,474,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;fa88cb55-3c48-4620-88f5-52f152628eb1&quot;}}]
-1542632519565	Marionette	TRACE	0 -&gt; [0,475,&quot;WebDriver:ElementSendKeys&quot;,{&quot;id&quot;:&quot;fa88cb55-3c48-4620-88f5-52f152628eb1&quot;,&quot;text&quot;:&quot;David&quot;,&quot;value&quot;:[&quot;D&quot;,&quot;a&quot;,&quot;v&quot;,&quot;i&quot;,&quot;d&quot;]}]
-1542632519578	Marionette	TRACE	0 &lt;- [1,475,null,{&quot;value&quot;:null}]
-1542632519582	Marionette	TRACE	0 -&gt; [0,476,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='lastname']&quot;}]
-1542632519584	Marionette	TRACE	0 &lt;- [1,476,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;841659a3-0bd2-4280-935e-aba5d3ab4c1e&quot;}}]
-1542632519592	Marionette	TRACE	0 -&gt; [0,477,&quot;WebDriver:ElementClick&quot;,{&quot;id&quot;:&quot;841659a3-0bd2-4280-935e-aba5d3ab4c1e&quot;}]
-1542632519798	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
-1542632519801	Marionette	TRACE	0 &lt;- [1,477,null,{&quot;value&quot;:null}]
-1542632519808	Marionette	TRACE	0 -&gt; [0,478,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='lastname']&quot;}]
-1542632519813	Marionette	TRACE	0 &lt;- [1,478,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;841659a3-0bd2-4280-935e-aba5d3ab4c1e&quot;}}]
-1542632519819	Marionette	TRACE	0 -&gt; [0,479,&quot;WebDriver:ElementClear&quot;,{&quot;id&quot;:&quot;841659a3-0bd2-4280-935e-aba5d3ab4c1e&quot;}]
-1542632519826	Marionette	TRACE	0 &lt;- [1,479,null,{&quot;value&quot;:null}]
-1542632519832	Marionette	TRACE	0 -&gt; [0,480,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='lastname']&quot;}]
-1542632519837	Marionette	TRACE	0 &lt;- [1,480,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;841659a3-0bd2-4280-935e-aba5d3ab4c1e&quot;}}]
-1542632519844	Marionette	TRACE	0 -&gt; [0,481,&quot;WebDriver:ElementSendKeys&quot;,{&quot;id&quot;:&quot;841659a3-0bd2-4280-935e-aba5d3ab4c1e&quot;,&quot;text&quot;:&quot;Pinto&quot;,&quot;value&quot;:[&quot;P&quot;,&quot;i&quot;,&quot;n&quot;,&quot;t&quot;,&quot;o&quot;]}]
-1542632519857	Marionette	TRACE	0 &lt;- [1,481,null,{&quot;value&quot;:null}]
-1542632519860	Marionette	TRACE	0 -&gt; [0,482,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='address']&quot;}]
-1542632519863	Marionette	TRACE	0 &lt;- [1,482,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;e56b9c79-0dbb-4451-a219-58c4ad3e0638&quot;}}]
-1542632519866	Marionette	TRACE	0 -&gt; [0,483,&quot;WebDriver:ElementClick&quot;,{&quot;id&quot;:&quot;e56b9c79-0dbb-4451-a219-58c4ad3e0638&quot;}]
-1542632520078	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
-1542632520079	Marionette	TRACE	0 &lt;- [1,483,null,{&quot;value&quot;:null}]
-1542632520080	Marionette	TRACE	0 -&gt; [0,484,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='address']&quot;}]
-1542632520082	Marionette	TRACE	0 &lt;- [1,484,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;e56b9c79-0dbb-4451-a219-58c4ad3e0638&quot;}}]
-1542632520085	Marionette	TRACE	0 -&gt; [0,485,&quot;WebDriver:ElementClear&quot;,{&quot;id&quot;:&quot;e56b9c79-0dbb-4451-a219-58c4ad3e0638&quot;}]
-1542632520090	Marionette	TRACE	0 &lt;- [1,485,null,{&quot;value&quot;:null}]
-1542632520094	Marionette	TRACE	0 -&gt; [0,486,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='address']&quot;}]
-1542632520096	Marionette	TRACE	0 &lt;- [1,486,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;e56b9c79-0dbb-4451-a219-58c4ad3e0638&quot;}}]
-1542632520101	Marionette	TRACE	0 -&gt; [0,487,&quot;WebDriver:ElementSendKeys&quot;,{&quot;id&quot;:&quot;e56b9c79-0dbb-4451-a219-58c4ad3e0638&quot;,&quot;text&quot;:&quot;Mercaz klita&quot;,&quot;value&quot;:[&quot;M&quot;,&quot;e&quot;,&quot;r&quot;,&quot;c&quot;,&quot;a&quot;,&quot;z&quot;,&quot; &quot;,&quot;k&quot;,&quot;l&quot;,&quot;i&quot;,&quot;t&quot;,&quot;a&quot;]}]
-1542632520117	Marionette	TRACE	0 &lt;- [1,487,null,{&quot;value&quot;:null}]
-1542632520119	Marionette	TRACE	0 -&gt; [0,488,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='email']&quot;}]
-1542632520122	Marionette	TRACE	0 &lt;- [1,488,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;dd6346fd-b5ac-4089-acad-098512bfc801&quot;}}]
-1542632520127	Marionette	TRACE	0 -&gt; [0,489,&quot;WebDriver:ElementClick&quot;,{&quot;id&quot;:&quot;dd6346fd-b5ac-4089-acad-098512bfc801&quot;}]
-1542632520349	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
-1542632520350	Marionette	TRACE	0 &lt;- [1,489,null,{&quot;value&quot;:null}]
-1542632520355	Marionette	TRACE	0 -&gt; [0,490,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='email']&quot;}]
-1542632520368	Marionette	TRACE	0 &lt;- [1,490,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;dd6346fd-b5ac-4089-acad-098512bfc801&quot;}}]
-1542632520373	Marionette	TRACE	0 -&gt; [0,491,&quot;WebDriver:ElementClear&quot;,{&quot;id&quot;:&quot;dd6346fd-b5ac-4089-acad-098512bfc801&quot;}]
-1542632520380	Marionette	TRACE	0 &lt;- [1,491,null,{&quot;value&quot;:null}]
-1542632520384	Marionette	TRACE	0 -&gt; [0,492,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='email']&quot;}]
-1542632520387	Marionette	TRACE	0 &lt;- [1,492,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;dd6346fd-b5ac-4089-acad-098512bfc801&quot;}}]
-1542632520390	Marionette	TRACE	0 -&gt; [0,493,&quot;WebDriver:ElementSendKeys&quot;,{&quot;id&quot;:&quot;dd6346fd-b5ac-4089-acad-098512bfc801&quot;,&quot;text&quot;:&quot;DPinto@gmail.com&quot;,&quot;value&quot;:[&quot;D&quot;,&quot;P&quot;,&quot;i&quot;,&quot;n&quot;,&quot;t&quot;,&quot;o&quot;,&quot;@&quot;,&quot;g&quot;,&quot;m&quot;,&quot;a&quot;,&quot;i&quot;,&quot;l&quot;,&quot;.&quot;,&quot;c&quot;,&quot;o&quot;,&quot;m&quot;]}]
-1542632520409	Marionette	TRACE	0 &lt;- [1,493,null,{&quot;value&quot;:null}]
-1542632520413	Marionette	TRACE	0 -&gt; [0,494,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='home']&quot;}]
-1542632520420	Marionette	TRACE	0 &lt;- [1,494,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;7d5a2b9b-83be-432b-9e31-3930048c9465&quot;}}]
-1542632520424	Marionette	TRACE	0 -&gt; [0,495,&quot;WebDriver:ElementClick&quot;,{&quot;id&quot;:&quot;7d5a2b9b-83be-432b-9e31-3930048c9465&quot;}]
-1542632520633	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
-1542632520633	Marionette	TRACE	0 &lt;- [1,495,null,{&quot;value&quot;:null}]
-1542632520637	Marionette	TRACE	0 -&gt; [0,496,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='home']&quot;}]
-1542632520641	Marionette	TRACE	0 &lt;- [1,496,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;7d5a2b9b-83be-432b-9e31-3930048c9465&quot;}}]
-1542632520644	Marionette	TRACE	0 -&gt; [0,497,&quot;WebDriver:ElementClear&quot;,{&quot;id&quot;:&quot;7d5a2b9b-83be-432b-9e31-3930048c9465&quot;}]
-1542632520646	Marionette	TRACE	0 &lt;- [1,497,null,{&quot;value&quot;:null}]
-1542632520650	Marionette	TRACE	0 -&gt; [0,498,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='home']&quot;}]
-1542632520652	Marionette	TRACE	0 &lt;- [1,498,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;7d5a2b9b-83be-432b-9e31-3930048c9465&quot;}}]
-1542632520656	Marionette	TRACE	0 -&gt; [0,499,&quot;WebDriver:ElementSendKeys&quot;,{&quot;id&quot;:&quot;7d5a2b9b-83be-432b-9e31-3930048c9465&quot;,&quot;text&quot;:&quot;054928745&quot;,&quot;value&quot;:[&quot;0&quot;,&quot;5&quot;,&quot;4&quot;,&quot;9&quot;,&quot;2&quot;,&quot;8&quot;,&quot;7&quot;,&quot;4&quot;,&quot;5&quot;]}]
-1542632520665	Marionette	TRACE	0 &lt;- [1,499,null,{&quot;value&quot;:null}]
-1542632520668	Marionette	TRACE	0 -&gt; [0,500,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='update']&quot;}]
-1542632520672	Marionette	TRACE	0 &lt;- [1,500,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;34c4414e-fbc1-473c-bf52-9207137fbc47&quot;}}]
-1542632520676	Marionette	TRACE	0 -&gt; [0,501,&quot;WebDriver:ElementClick&quot;,{&quot;id&quot;:&quot;34c4414e-fbc1-473c-bf52-9207137fbc47&quot;}]
-1542632520693	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://localhost/addressbook/edit.php?id=87
-1542632520731	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://localhost/addressbook/edit.php?id=87
-1542632520732	Marionette	DEBUG	[6442450945] Received DOM event unload for http://localhost/addressbook/edit.php?id=87
-1542632520746	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://localhost/addressbook/edit.php
-1542632520757	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://localhost/addressbook/edit.php
-1542632520759	Marionette	TRACE	0 &lt;- [1,501,null,{&quot;value&quot;:null}]
-1542632520910	Marionette	TRACE	0 -&gt; [0,505,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;[title=EDIT]&quot;}]
-1542632520912	Marionette	TRACE	0 &lt;- [1,505,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;968a5838-95af-48fa-be34-f42642a32c08&quot;}}]
-1542632520916	Marionette	TRACE	0 -&gt; [0,506,&quot;WebDriver:ElementClick&quot;,{&quot;id&quot;:&quot;968a5838-95af-48fa-be34-f42642a32c08&quot;}]
-1542632520930	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://localhost/addressbook/
-1542632520965	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://localhost/addressbook/
-1542632520966	Marionette	DEBUG	[6442450945] Received DOM event unload for http://localhost/addressbook/
-1542632520976	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://localhost/addressbook/edit.php?id=13
-1542632521007	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://localhost/addressbook/edit.php?id=13
-1542632521008	Marionette	TRACE	0 &lt;- [1,506,null,{&quot;value&quot;:null}]
-1542632521014	Marionette	TRACE	0 -&gt; [0,507,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='firstname']&quot;}]
-1542632521017	Marionette	TRACE	0 &lt;- [1,507,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;c1012dea-280f-49de-a843-55cc5b1b628f&quot;}}]
-1542632521029	Marionette	TRACE	0 -&gt; [0,508,&quot;WebDriver:ElementClick&quot;,{&quot;id&quot;:&quot;c1012dea-280f-49de-a843-55cc5b1b628f&quot;}]
-1542632521244	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
-1542632521244	Marionette	TRACE	0 &lt;- [1,508,null,{&quot;value&quot;:null}]
-1542632521248	Marionette	TRACE	0 -&gt; [0,509,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='firstname']&quot;}]
-1542632521250	Marionette	TRACE	0 &lt;- [1,509,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;c1012dea-280f-49de-a843-55cc5b1b628f&quot;}}]
-1542632521253	Marionette	TRACE	0 -&gt; [0,510,&quot;WebDriver:ElementClear&quot;,{&quot;id&quot;:&quot;c1012dea-280f-49de-a843-55cc5b1b628f&quot;}]
-1542632521255	Marionette	TRACE	0 &lt;- [1,510,null,{&quot;value&quot;:null}]
-1542632521258	Marionette	TRACE	0 -&gt; [0,511,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='firstname']&quot;}]
-1542632521260	Marionette	TRACE	0 &lt;- [1,511,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;c1012dea-280f-49de-a843-55cc5b1b628f&quot;}}]
-1542632521264	Marionette	TRACE	0 -&gt; [0,512,&quot;WebDriver:ElementSendKeys&quot;,{&quot;id&quot;:&quot;c1012dea-280f-49de-a843-55cc5b1b628f&quot;,&quot;text&quot;:&quot;Steven&quot;,&quot;value&quot;:[&quot;S&quot;,&quot;t&quot;,&quot;e&quot;,&quot;v&quot;,&quot;e&quot;,&quot;n&quot;]}]
-1542632521271	Marionette	TRACE	0 &lt;- [1,512,null,{&quot;value&quot;:null}]
-1542632521275	Marionette	TRACE	0 -&gt; [0,513,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='lastname']&quot;}]
-1542632521278	Marionette	TRACE	0 &lt;- [1,513,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;6a7e0924-02a7-41c2-83a4-6dd741a7f8c3&quot;}}]
-1542632521282	Marionette	TRACE	0 -&gt; [0,514,&quot;WebDriver:ElementClick&quot;,{&quot;id&quot;:&quot;6a7e0924-02a7-41c2-83a4-6dd741a7f8c3&quot;}]
-1542632521493	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
-1542632521494	Marionette	TRACE	0 &lt;- [1,514,null,{&quot;value&quot;:null}]
-1542632521498	Marionette	TRACE	0 -&gt; [0,515,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='lastname']&quot;}]
-1542632521502	Marionette	TRACE	0 &lt;- [1,515,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;6a7e0924-02a7-41c2-83a4-6dd741a7f8c3&quot;}}]
-1542632521507	Marionette	TRACE	0 -&gt; [0,516,&quot;WebDriver:ElementClear&quot;,{&quot;id&quot;:&quot;6a7e0924-02a7-41c2-83a4-6dd741a7f8c3&quot;}]
-1542632521513	Marionette	TRACE	0 &lt;- [1,516,null,{&quot;value&quot;:null}]
-1542632521517	Marionette	TRACE	0 -&gt; [0,517,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='lastname']&quot;}]
-1542632521519	Marionette	TRACE	0 &lt;- [1,517,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;6a7e0924-02a7-41c2-83a4-6dd741a7f8c3&quot;}}]
-1542632521523	Marionette	TRACE	0 -&gt; [0,518,&quot;WebDriver:ElementSendKeys&quot;,{&quot;id&quot;:&quot;6a7e0924-02a7-41c2-83a4-6dd741a7f8c3&quot;,&quot;text&quot;:&quot;Sarfati&quot;,&quot;value&quot;:[&quot;S&quot;,&quot;a&quot;,&quot;r&quot;,&quot;f&quot;,&quot;a&quot;,&quot;t&quot;,&quot;i&quot;]}]
-1542632521531	Marionette	TRACE	0 &lt;- [1,518,null,{&quot;value&quot;:null}]
-1542632521535	Marionette	TRACE	0 -&gt; [0,519,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='address']&quot;}]
-1542632521545	Marionette	TRACE	0 &lt;- [1,519,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;db4e66d4-9705-4df4-b3ce-04a0c3e54fec&quot;}}]
-1542632521549	Marionette	TRACE	0 -&gt; [0,520,&quot;WebDriver:ElementClick&quot;,{&quot;id&quot;:&quot;db4e66d4-9705-4df4-b3ce-04a0c3e54fec&quot;}]
-1542632521758	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
-1542632521759	Marionette	TRACE	0 &lt;- [1,520,null,{&quot;value&quot;:null}]
-1542632521761	Marionette	TRACE	0 -&gt; [0,521,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='address']&quot;}]
-1542632521763	Marionette	TRACE	0 &lt;- [1,521,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;db4e66d4-9705-4df4-b3ce-04a0c3e54fec&quot;}}]
-1542632521765	Marionette	TRACE	0 -&gt; [0,522,&quot;WebDriver:ElementClear&quot;,{&quot;id&quot;:&quot;db4e66d4-9705-4df4-b3ce-04a0c3e54fec&quot;}]
-1542632521767	Marionette	TRACE	0 &lt;- [1,522,null,{&quot;value&quot;:null}]
-1542632521770	Marionette	TRACE	0 -&gt; [0,523,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='address']&quot;}]
-1542632521775	Marionette	TRACE	0 &lt;- [1,523,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;db4e66d4-9705-4df4-b3ce-04a0c3e54fec&quot;}}]
-1542632521779	Marionette	TRACE	0 -&gt; [0,524,&quot;WebDriver:ElementSendKeys&quot;,{&quot;id&quot;:&quot;db4e66d4-9705-4df4-b3ce-04a0c3e54fec&quot;,&quot;text&quot;:&quot;770 States&quot;,&quot;value&quot;:[&quot;7&quot;,&quot;7&quot;,&quot;0&quot;,&quot; &quot;,&quot;S&quot;,&quot;t&quot;,&quot;a&quot;,&quot;t&quot;,&quot;e&quot;,&quot;s&quot;]}]
-1542632521792	Marionette	TRACE	0 &lt;- [1,524,null,{&quot;value&quot;:null}]
-1542632521796	Marionette	TRACE	0 -&gt; [0,525,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='email']&quot;}]
-1542632521800	Marionette	TRACE	0 &lt;- [1,525,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;cca70919-ce99-4a37-b3e6-027d9f48144e&quot;}}]
-1542632521807	Marionette	TRACE	0 -&gt; [0,526,&quot;WebDriver:ElementClick&quot;,{&quot;id&quot;:&quot;cca70919-ce99-4a37-b3e6-027d9f48144e&quot;}]
-1542632522016	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
-1542632522016	Marionette	TRACE	0 &lt;- [1,526,null,{&quot;value&quot;:null}]
-1542632522021	Marionette	TRACE	0 -&gt; [0,527,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='email']&quot;}]
-1542632522024	Marionette	TRACE	0 &lt;- [1,527,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;cca70919-ce99-4a37-b3e6-027d9f48144e&quot;}}]
-1542632522031	Marionette	TRACE	0 -&gt; [0,528,&quot;WebDriver:ElementClear&quot;,{&quot;id&quot;:&quot;cca70919-ce99-4a37-b3e6-027d9f48144e&quot;}]
-1542632522036	Marionette	TRACE	0 &lt;- [1,528,null,{&quot;value&quot;:null}]
-1542632522044	Marionette	TRACE	0 -&gt; [0,529,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='email']&quot;}]
-1542632522046	Marionette	TRACE	0 &lt;- [1,529,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;cca70919-ce99-4a37-b3e6-027d9f48144e&quot;}}]
-1542632522050	Marionette	TRACE	0 -&gt; [0,530,&quot;WebDriver:ElementSendKeys&quot;,{&quot;id&quot;:&quot;cca70919-ce99-4a37-b3e6-027d9f48144e&quot;,&quot;text&quot;:&quot;SS55@yahoo.fr&quot;,&quot;value&quot;:[&quot;S&quot;,&quot;S&quot;,&quot;5&quot;,&quot;5&quot;,&quot;@&quot;,&quot;y&quot;,&quot;a&quot;,&quot;h&quot;,&quot;o&quot;,&quot;o&quot;,&quot;.&quot;,&quot;f&quot;,&quot;r&quot;]}]
-1542632522065	Marionette	TRACE	0 &lt;- [1,530,null,{&quot;value&quot;:null}]
-1542632522071	Marionette	TRACE	0 -&gt; [0,531,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='home']&quot;}]
-1542632522098	Marionette	TRACE	0 &lt;- [1,531,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;608656dc-907c-4203-a9ae-e402a28b9c80&quot;}}]
-1542632522103	Marionette	TRACE	0 -&gt; [0,532,&quot;WebDriver:ElementClick&quot;,{&quot;id&quot;:&quot;608656dc-907c-4203-a9ae-e402a28b9c80&quot;}]
-1542632522311	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
-1542632522312	Marionette	TRACE	0 &lt;- [1,532,null,{&quot;value&quot;:null}]
-1542632522315	Marionette	TRACE	0 -&gt; [0,533,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='home']&quot;}]
-1542632522317	Marionette	TRACE	0 &lt;- [1,533,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;608656dc-907c-4203-a9ae-e402a28b9c80&quot;}}]
-1542632522321	Marionette	TRACE	0 -&gt; [0,534,&quot;WebDriver:ElementClear&quot;,{&quot;id&quot;:&quot;608656dc-907c-4203-a9ae-e402a28b9c80&quot;}]
-1542632522323	Marionette	TRACE	0 &lt;- [1,534,null,{&quot;value&quot;:null}]
-1542632522325	Marionette	TRACE	0 -&gt; [0,535,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='home']&quot;}]
-1542632522327	Marionette	TRACE	0 &lt;- [1,535,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;608656dc-907c-4203-a9ae-e402a28b9c80&quot;}}]
-1542632522330	Marionette	TRACE	0 -&gt; [0,536,&quot;WebDriver:ElementSendKeys&quot;,{&quot;id&quot;:&quot;608656dc-907c-4203-a9ae-e402a28b9c80&quot;,&quot;text&quot;:&quot;055555555&quot;,&quot;value&quot;:[&quot;0&quot;,&quot;5&quot;,&quot;5&quot;,&quot;5&quot;,&quot;5&quot;,&quot;5&quot;,&quot;5&quot;,&quot;5&quot;,&quot;5&quot;]}]
-1542632522344	Marionette	TRACE	0 &lt;- [1,536,null,{&quot;value&quot;:null}]
-1542632522348	Marionette	TRACE	0 -&gt; [0,537,&quot;WebDriver:FindElement&quot;,{&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;*[name='update']&quot;}]
-1542632522359	Marionette	TRACE	0 &lt;- [1,537,null,{&quot;value&quot;:{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;69c792a7-73c6-4b09-84cf-bb5a2ceecba7&quot;}}]
-1542632522365	Marionette	TRACE	0 -&gt; [0,538,&quot;WebDriver:ElementClick&quot;,{&quot;id&quot;:&quot;69c792a7-73c6-4b09-84cf-bb5a2ceecba7&quot;}]
-1542632522376	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://localhost/addressbook/edit.php?id=13
-1542632522426	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://localhost/addressbook/edit.php?id=13
-1542632522427	Marionette	DEBUG	[6442450945] Received DOM event unload for http://localhost/addressbook/edit.php?id=13
-1542632522439	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://localhost/addressbook/edit.php
-1542632522447	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://localhost/addressbook/edit.php
-1542632522448	Marionette	TRACE	0 &lt;- [1,538,null,{&quot;value&quot;:null}]
-</pre>
-</span>
 </div>
 </div>
 <div id="footer">
@@ -357,7 +363,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.0</a> at 19-Nov-2018 15:02:04</p>
+<a href="http://www.gradle.org">Gradle 4.0</a> at 03-Dec-2018 13:56:28</p>
 </div>
 </div>
 </body>

@@ -3,6 +3,7 @@ package com.telran.repeat.manager;
 import com.telran.repeat.model.Contact;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class ContactHelper extends HelperBase{
 
@@ -20,6 +21,9 @@ public class ContactHelper extends HelperBase{
     type(By.name("address"), contact.getAddress());
     type(By.name("email"), contact.getEmail());
     type(By.name("home"), contact.getPhoneHome());
+    new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contact.getGroup());
+    attach(By.name("photo"),contact.getPhoto());
+
   }
 
   public void initContactCreation() {
@@ -33,7 +37,6 @@ public class ContactHelper extends HelperBase{
   public void deleteContact() {
     click(By.cssSelector("[onclick='DeleteSel()']"));
   }
-  //*[@onclick='DeleteSel()']
 
   public void selectContact() {
     click(By.name("selected[]"));

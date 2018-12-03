@@ -8,6 +8,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/repetition-03_10_2018.iml" filepath="$PROJECT_DIR$/.idea/modules/repetition-03_10_2018.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/repetition-03_10_2018_main.iml" filepath="$PROJECT_DIR$/.idea/modules/repetition-03_10_2018_main.iml" group="repetition-03_10_2018" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/repetition-03_10_2018_test.iml" filepath="$PROJECT_DIR$/.idea/modules/repetition-03_10_2018_test.iml" group="repetition-03_10_2018" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/simple-test.iml" filepath="$PROJECT_DIR$/.idea/modules/simple-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/simple-test_main.iml" filepath="$PROJECT_DIR$/.idea/modules/simple-test_main.iml" group="simple-test" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/simple-test_test.iml" filepath="$PROJECT_DIR$/.idea/modules/simple-test_test.iml" group="simple-test" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/trello tests.iml" filepath="$PROJECT_DIR$/.idea/modules/trello tests.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/trello_tests.iml" filepath="$PROJECT_DIR$/.idea/modules/trello_tests.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/trello_tests_main.iml" filepath="$PROJECT_DIR$/.idea/modules/trello_tests_main.iml" group="trello_tests" />

@@ -1,7 +1,11 @@
 package com.telran.repeat.tests;
 
+import com.telran.repeat.manager.ApplicationManager;
+import com.telran.repeat.manager.HelperBase;
 import com.telran.repeat.model.Group;
 import com.telran.repeat.provider.StaticProvider;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -21,7 +25,6 @@ public class GroupCreationTests extends TestBase {
   int before = app.getGroupHelper().getGroupsCount();
 
   app.getGroupHelper().initGroupCreation();
-
   app.getGroupHelper().fillGroupForm(group);
   app.getGroupHelper().confirmGroupCreation();
   app.getGroupHelper().returnToGroupsPage();
