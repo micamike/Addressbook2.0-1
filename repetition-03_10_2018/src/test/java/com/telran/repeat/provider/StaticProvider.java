@@ -22,7 +22,7 @@ public class StaticProvider {
         String line = reader.readLine();
         while(line != null) {
             String[] split = line.split(";");
-            list.add(new Object[]{new Contact().setfName(split[0]).setlName(split[1]).setAddress(split[2]).setEmail(split[3]).setPhoneHome(split[4])});
+            list.add(new Object[]{new Contact().setfName(split[0]).setlName(split[1]).setAddress(split[2]).setEmail(split[3]).setPhoneHome(split[4]).setGroup(split[5])});
             line = reader.readLine();
         }
         return list.iterator() ;
