@@ -12,6 +12,7 @@ repositories {
 dependencies {
     compile 'org.seleniumhq.selenium:selenium-java:3.14.0'
     compile 'org.testng:testng:6.14.3'
+    compile 'ch.qos.logback:logback-classic:1.2.3'
 }
 
 test{
