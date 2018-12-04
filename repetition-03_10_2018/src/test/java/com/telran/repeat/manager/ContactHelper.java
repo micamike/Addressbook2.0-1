@@ -22,7 +22,17 @@ public class ContactHelper extends HelperBase{
     type(By.name("email"), contact.getEmail());
     type(By.name("home"), contact.getPhoneHome());
     new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contact.getGroup());
-    //attach(By.name("photo"),contact.getPhoto());
+    attach(By.name("photo"),contact.getPhoto());
+
+  }
+
+  public void modifContactForm(Contact contact) {
+    type(By.name("firstname"), contact.getfName());
+    type(By.name("lastname"), contact.getlName());
+    type(By.name("address"), contact.getAddress());
+    type(By.name("email"), contact.getEmail());
+    type(By.name("home"), contact.getPhoneHome());
+
 
   }
 
